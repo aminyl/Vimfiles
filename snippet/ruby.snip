@@ -1,0 +1,121 @@
+snippet time
+abbr    times ... end
+  ${1}.times do |${2:i}|
+    ${3:TARGET}
+  end
+
+snippet for
+abbr    for ... end
+  for ${1:i} in (${2}..${3}) do
+    ${4:TARGET}
+  end
+
+snippet down
+abbr    downto ... end
+   ${1}.downto(${2}) do |${3:i}|
+    ${4:TARGET}
+  end
+
+snippet while
+abbr    while ... end
+  while ${1} do
+        ${2:TARGET}
+  end
+
+snippet each
+abbr    each ... end
+  ${1}.each do |${2:i}|
+    ${3:TARGET}
+  end
+
+snippet arr
+abbr    Array.new()
+    = Array.new(${1})
+snippet arra
+abbr    Array.new()
+  = Array.new(${1})
+snippet =arr
+abbr    Array.new()
+    = Array.new(${1})
+snippet =arra
+abbr    Array.new()
+  = Array.new(${1})
+   
+snippet arr2
+abbr    Array.new()
+    = Array.new(${1}).map{Array.new(${2})}
+snippet arra2
+abbr    Array.new()
+  = Array.new(${1}).map{Array.new(${2})}
+snippet =arr2
+abbr    Array.new()
+    = Array.new(${1}).map{Array.new(${2})}
+snippet =arra2
+abbr    Array.new()
+  = Array.new(${1}).map{Array.new(${2})}
+
+snippet geti
+abbr    gets.to_i
+  gets.to_i
+  ${1}
+snippet gets
+abbr    gets.split.map(&:to_i)
+  gets.split.map(&:to_i)
+  ${1}
+snippet getc
+abbr    gets.chomp
+  gets.chomp
+  ${1}
+snippet =geti
+abbr    gets.to_i
+  = gets.to_i
+  ${1}
+snippet =gets
+abbr    gets.split.map(&:to_i)
+  = gets.split.map(&:to_i)
+  ${1}
+snippet =getc
+abbr    gets.chomp
+  = gets.chomp
+  ${1}
+
+snippet ttao
+abbr    times.map { gets.to_i }
+  ${1} = ${2}.times.map { gets.to_i }
+  ${3}
+snippet ttat
+abbr    a[i], b[i] = gets.split.map(&:to_i)
+  ${1:n}.times do |i|
+    ${2}[i], ${3}[i] = gets.split.map(&:to_i)
+  end
+  ${4}
+
+snippet injp
+abbr    inject :+
+options word
+  inject :+
+  ${1}
+snippet inje
+abbr    inject{}
+options word
+  inject{|${1:sum}, ${2:i}| ${3}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
