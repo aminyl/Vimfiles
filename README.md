@@ -1,5 +1,2 @@
-# aeeaueaonakasuita
-nandesukakoreha
-
-henkoushitayo
-
+# Vimfiles
+Vim files for Ruby
