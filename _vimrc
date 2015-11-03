@@ -66,8 +66,8 @@ autocmd BufRead,BufNewFile * nested if @% !~ '\.' && getline(1) !~ '^#!.*' | set
 " =============================================================================
 " 対応する括弧を自動入力
 imap { {}<LEFT>
-imap [ []<LEFT>
-imap ( ()<LEFT>
+" imap [ []<LEFT>
+" imap ( ()<LEFT>
 inoremap {<CR> {<CR>}<ESC><UP>o
 " inoremap [<CR> [<CR>]<ESC><UP>o
 " inoremap (<CR> (<CR>)<ESC><UP>o
