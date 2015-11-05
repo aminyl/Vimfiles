@@ -30,41 +30,41 @@ abbr    each ... end
 
 snippet arr
 abbr    Array.new()
-    = Array.new(${1})
+  = Array.new(${1})
 snippet arra
 abbr    Array.new()
   = Array.new(${1})
 snippet =arr
 abbr    Array.new()
-    = Array.new(${1})
+  = Array.new(${1})
 snippet =arra
 abbr    Array.new()
   = Array.new(${1})
    
 snippet arr2
 abbr    Array.new()
-    = Array.new(${1}).map{Array.new(${2})}
+  = Array.new(${1}).map{Array.new(${2})}
 snippet arra2
 abbr    Array.new()
   = Array.new(${1}).map{Array.new(${2})}
 snippet =arr2
 abbr    Array.new()
-    = Array.new(${1}).map{Array.new(${2})}
+  = Array.new(${1}).map{Array.new(${2})}
 snippet =arra2
 abbr    Array.new()
   = Array.new(${1}).map{Array.new(${2})}
 
 snippet geti
 abbr    gets.to_i
-  gets.to_i
+  = gets.to_i
   ${1}
 snippet gets
 abbr    gets.split.map(&:to_i)
-  gets.split.map(&:to_i)
+  = gets.split.map(&:to_i)
   ${1}
 snippet getc
 abbr    gets.chomp
-  gets.chomp
+  = gets.chomp
   ${1}
 snippet =geti
 abbr    gets.to_i
