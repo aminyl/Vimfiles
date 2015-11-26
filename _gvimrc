@@ -85,7 +85,7 @@ set guitablabel=\ %{GuiTabLabel()}
 " =============================================================================
 " 1つのファイルをドロップしたときに新しいタブで開く :http://vimwiki.net/?tips%2F100 
 " =============================================================================
-autocmd VimEnter * tab all
-autocmd BufAdd * exe 'tablast | tabe "' . expand( "<afile") .'"'
+"autocmd VimEnter * tab all
+"autocmd BufAdd * exe 'tablast | tabe "' . expand( "<afile") .'"'
 
 
