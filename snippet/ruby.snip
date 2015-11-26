@@ -93,10 +93,12 @@ abbr    times.map { gets.to_i }
   ${3}
 snippet ttat
 abbr    a[i], b[i] = gets.split.map(&:to_i)
-  ${1:n}.times do |i|
-    ${2}[i], ${3}[i] = gets.split.map(&:to_i)
-  end
+  ${1}, ${2} = ${3:n}.times.map { gets.split.map(&:to_i) }.transpose
   ${4}
+#${1:n}.times do |i|
+#${2}[i], ${3}[i] = gets.split.map(&:to_i)
+#end
+#${4}
 
 snippet injp
 abbr    inject :+
@@ -107,7 +109,6 @@ snippet inje
 abbr    inject{}
 options word
   inject{|${1:sum}, ${2:i}| ${3}}
-
 
 
 

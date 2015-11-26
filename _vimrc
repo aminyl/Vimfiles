@@ -72,8 +72,8 @@ inoremap {<CR> {<CR>}<ESC><UP>o
 " inoremap [<CR> [<CR>]<ESC><UP>o
 " inoremap (<CR> (<CR>)<ESC><UP>o
 " 保存して実行
-nnoremap <C-x> :w<ENTER>:!ruby %<ENTER>
-inoremap <C-x> <ESC>:w<ENTER>:!ruby %<ENTER><ESC>a
+nnoremap <F5> :w<ENTER>:!ruby %<ENTER>
+inoremap <F5> <ESC>:w<ENTER>:!ruby %<ENTER><ESC>a
 " 保存 " mswin.vimとかぶるので使用しない
 "nnoremap <C-s> :w<ENTER>
 "inoremap <C-s> <ESC>:w<ENTER><ESC>a
