@@ -12,24 +12,29 @@ set clipboard=unnamed   " クリップボード共有
 set ignorecase          " 検索時に大文字小文字を無視 (noignorecase:無視しない)
 set smartcase           " 大文字小文字の両方が含まれている場合は大文字小文字を区別
 set wrapscan            " 検索時にファイルの最後まで行ったら最初に戻る (nowrapscan:戻らない)
-set smarttab            "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
+set smarttab            " 行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
 " タブの画面上での幅(Rubyは2)(必要ないかもしれない)
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab           " タブをスペースに展開 (expandtab:展開する,noexpandtab:展開しない)
 set autoindent					" 自動的にインデントする (noautoindent:インデントしない)
-set smartindent					"自動インデントを有効化する
+set smartindent					" 自動インデントを有効化する
 set backspace=indent,eol,start	" バックスペースでインデントや改行を削除できるようにする
 set showmatch			  		" 括弧入力時に対応する括弧を表示 (noshowmatch:表示しない)
 set wildmenu			  		" コマンドライン補完するときに強化されたものを使う(参照 :help wildmenu)
-set wildmode=list,longest:full	"(よくわからん削除してもいいかも)
+set wildmode=list,longest:full	" (よくわからん削除してもいいかも)
 set formatoptions+=mM		" テキスト挿入中の自動折り返しを日本語に対応させる
 set history=1000				" ヒストリの最大
 " set shellslash				" Windowsで/(quickrunの時にエラーが出るので無効にしておく)
 set tags=~/.tags				" タグファイルの指定(でもタグジャンプは使ったことがない)
-" ステータス行に表示させる情報の指定(どこからかコピペしたので細かい意味はわかっていない)
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+" ステータス行に表示させる情報の指定
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=C:%c\ L:%l/%L 
+augroup InsertHook
+    autocmd InsertEnter * set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=C:%c\ L:%l/%L 
+    autocmd InsertLeave * set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=C:%c\ L:%l/%L 
+augroup END
+
 " ステータス行に現在のgitブランチを表示する(未知関数です，無効な式ですというエラー)
 " set statusline+=%{fugitive#statusline()}
 set noswapfile					" スワップ無し(ときどき面倒な警告が出るだけで役に立ったことがない)
@@ -43,16 +48,16 @@ set browsedir=buffer		" バッファで開いているファイルのディレ�
 "set listchars=tab:^\_,trail:~,extends:.	  	"タブ部分に~を表示
 "set cursorline
 "hi clear CursorLine
-set whichwrap=b,s,h,l,<,>,[,]	" カーソルを行頭、行末で止まらないようにする(mswin.vimを有効にしていてもhlの移動では必要)
+set whichwrap=b,s,h,l,<,>,[,]	" カーソルを行頭，行末で止まらないようにする(mswin.vimを有効にしていてもhlの移動では必要)
 syntax on				    		" 色づけをオン
 set hidden				  		" バッファを保存しなくても他のバッファを表示できるようにする(保存されていないファイルがあるときでも別のファイルを開けるようにする)
-set visualbell			" ビープの代わりにビジュアルベル（画面フラッシュ）を使う
+set visualbell	    		" ビープの代わりにビジュアルベル(画面フラッシュ)を使う
 " ビジュアルベルを無効化する(よくわからない)
 set t_vb=
 set shortmess=a
 
 " =============================================================================
-" Vim起動時に、「バッファ名が空」かつ「の場合はfiletype=ruby
+" Vim起動時に「バッファ名が空」かつ「の場合はfiletype=ruby
 " =============================================================================
 autocmd VimEnter * nested if @% == '' && s:GetBufByte() == 0 | set filetype=ruby | endif
 function! s:GetBufByte()
@@ -88,8 +93,8 @@ nnoremap J 5j
 nnoremap K 5k
 vnoremap J 5j
 vnoremap K 5k
-"nnoremap t <C-t>		" タグ関係
-nnoremap se ggVG=		" フォーマット
+" nnoremap t <C-t>		" タグ関係
+nnoremap se ggVG=<C-o><C-o><C-o><C-o>   " フォーマット
 map Y y$		        " Yの動作をDやCと同じにする
 
 " =============================================================================
@@ -152,14 +157,14 @@ if has("autocmd")
 endif
 
 " =============================================================================
-"" 置換を便利にする設定
+" 置換を便利にする設定
 " =============================================================================
 " https://github.com/yuroyoro/dotfiles/blob/master/.vimrc.search
 "選択した文字列を置換
 "vnoremap /r "xy;%s/<C-R>=escape(@x, '\\/.*$^~[]')<CR>//gc<Left><Left><Left>
 
 "s*置換後文字列/g<Cr>でカーソル下のキーワードを置換
-nnoremap <expr> s* ':%substitute/\<' . expand('<cword>') . '\>/'
+nnoremap <expr> s* ':%substitute/\<' . expand('<cword>') . '\>//gc<Left><Left><Left>'
 
 " カーソル位置の単語をヤンクした単語に置換
 " https://sites.google.com/site/fudist/Home/vim-nihongo-ban/tips#TOC--8

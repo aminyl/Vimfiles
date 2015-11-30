@@ -1,4 +1,3 @@
-
 function! s:OpenAnswers()
   execute ":e $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/A.rb"
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/B.rb"
@@ -23,9 +22,14 @@ function! s:OpenSettings()
   execute ":tabnew $HOME/vimfiles/snippet/ruby.snip"
 endfunction
 
+function! s:OpenSubSettings()
+  execute ":e $HOME/vimfiles/setting/color.vim"
+  execute ":tabnew $HOME/vimfiles/setting/plugin.vim"
+  execute ":tabnew $HOME/vimfiles/setting/my_mswin.vim"
+endfunction
+
 command! Oans call <SID>OpenAnswers()
 command! Oref call <SID>OpenReferences()
 command! Orcs call <SID>OpenSettings()
-
-
+command! Oset call <SID>OpenSubSettings()
 

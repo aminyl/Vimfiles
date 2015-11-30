@@ -14,6 +14,5 @@ autocmd ColorScheme * highlight SignColumn ctermfg=22 guifg=#325c32 guibg=#1b1d1
 
 let g:molokai_original = 0 " デフォルトは0，他は1"
 " let g:rehash256 = 1 "256色モード(違いがわからない)
-
 colorscheme molokai
 
