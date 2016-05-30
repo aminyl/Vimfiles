@@ -55,6 +55,7 @@ set visualbell	    		" ビープの代わりにビジュアルベル(画面フ�
 " ビジュアルベルを無効化する(よくわからない)
 set t_vb=
 set shortmess=a
+set dictionary=$HOMEPATH/vimfiles/dictionary/ruby.dict
 
 " =============================================================================
 " Vim起動時に「バッファ名が空」かつ「の場合はfiletype=ruby

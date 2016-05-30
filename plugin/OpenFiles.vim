@@ -21,6 +21,7 @@ function! s:OpenSettings()
   execute ":e $HOME/_vimrc"
   execute ":tabnew $HOME/_gvimrc"
   execute ":tabnew $HOME/vimfiles/snippet/ruby.snip"
+  execute ":tabnew $HOME/vimfiles/dictionary/ruby.dict"
 endfunction
 
 function! s:OpenSubSettings()
