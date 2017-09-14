@@ -94,8 +94,8 @@ nnoremap J 5j
 nnoremap K 5k
 vnoremap J 5j
 vnoremap K 5k
-" nnoremap t <C-t>		" タグ関係
-nnoremap se ggVG=<C-o><C-o><C-o><C-o>   " フォーマット
+" nnoremap t <C-t>  " タグ関係
+nnoremap se ggVG=   " フォーマット
 map Y y$		        " Yの動作をDやCと同じにする
 imap <S-Del> <ESC>ddi
 imap <C-c> <ESC>yyi

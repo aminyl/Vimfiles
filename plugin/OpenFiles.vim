@@ -5,7 +5,7 @@ function! s:OpenAnswers()
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/D.rb"
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/E.rb"
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/F.rb"
-  execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/test.rb"
+  execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/tmp_0.rb"
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/tmp_1.rb"
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimcodes/tmp_2.rb"
 endfunction
