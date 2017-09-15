@@ -1,32 +1,32 @@
 snippet time
 abbr    times ... end
-  ${1}.times do |${2:i}|
+  ${1}.times { |${2:i}|
     ${3:TARGET}
-  end
+  }
 
 snippet for
 abbr    for ... end
-  for ${1:i} in (${2:0}..${3:.n}) do
+  for ${1:i} in (${2:0}..${3:.n}) {
     ${4:TARGET}
-  end
+  }
 
 snippet down
 abbr    downto ... end
-   ${1}.downto(${2}) do |${3:i}|
+   ${1}.downto(${2}) { |${3:i}|
     ${4:TARGET}
-  end
+  }
 
 snippet while
 abbr    while ... end
-  while ${1} do
+  while ${1} {
         ${2:TARGET}
-  end
+  }
 
 snippet each
 abbr    each ... end
-  ${1}.each do |${2:i}|
+  ${1}.each { |${2:i}|
     ${3:TARGET}
-  end
+  }
 
 snippet arr
 abbr    Array.new()
@@ -95,10 +95,6 @@ snippet ttat
 abbr    a[i], b[i] = gets.split.map(&:to_i)
   ${1}, ${2} = ${3:n}.times.map { gets.split.map(&:to_i) }.transpose
   ${4}
-#${1:n}.times do |i|
-#${2}[i], ${3}[i] = gets.split.map(&:to_i)
-#end
-#${4}
 
 snippet injp
 abbr    inject :+
@@ -109,22 +105,4 @@ snippet inje
 abbr    inject{}
 options word
   inject{|${1:sum}, ${2:i}| ${3}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

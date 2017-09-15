@@ -1,3 +1,7 @@
+" ~_vimrcに
+"   source ~/vimfiles/_vimrc
+" と記述してこのファイルを読み込む
+
 set number              " 行番号を表示 (表示:number，非表示:nonumber)
 set ruler               " ルーラーを表示 (noruler:非表示)
 set nolist		      		" タブや改行を表示 (list:表示)
@@ -100,6 +104,20 @@ map Y y$		        " Yの動作をDやCと同じにする
 imap <S-Del> <ESC>ddi
 imap <C-c> <ESC>yyi
 nmap <C-c> yy
+" 行入れ替え
+imap <M-k> <ESC>ddkPi
+imap <M-j> <ESC>ddpi
+imap <M-Up> <ESC>ddkPi
+imap <M-Down> <ESC>ddpi
+nmap <M-k> ddkP
+nmap <M-j> ddp
+nmap <M-Up> ddkP
+nmap <M-Down> ddp
+imap <C-Right> <ESC>ewi
+nmap <C-Right> w
+imap <C-Left> <ESC>gebi
+nmap <C-Left> b
+
 " =============================================================================
 " タブ，ウィンドウ
 " =============================================================================

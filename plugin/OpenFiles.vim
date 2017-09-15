@@ -18,8 +18,8 @@ function! s:OpenReferences()
 endfunction
 
 function! s:OpenSettings()
-  execute ":e $HOME/_vimrc"
-  execute ":tabnew $HOME/_gvimrc"
+  execute ":e $HOME/vimfiles/_vimrc"
+  execute ":tabnew $HOME/vimfiles/_gvimrc"
   execute ":tabnew $HOME/vimfiles/snippet/ruby.snip"
   execute ":tabnew $HOME/vimfiles/dictionary/ruby.dict"
 endfunction

@@ -1,5 +1,9 @@
 ﻿scriptencoding utf-8
 
+" ~_gvimrcに
+"   source ~/vimfiles/_gvimrc
+" と記述してこのファイルを読み込む
+
 " 色設定
 source ~/vimfiles/setting/color.vim
 " ツールバーを削除
