@@ -6,9 +6,9 @@ abbr    times ... end
 
 snippet for
 abbr    for ... end
-  for ${1:i} in (${2:0}..${3:.n}) {
+  for ${1:i} in (${2:0}..${3:.n})
     ${4:TARGET}
-  }
+  end
 
 snippet down
 abbr    downto ... end
@@ -18,14 +18,14 @@ abbr    downto ... end
 
 snippet while
 abbr    while ... end
-  while ${1} {
+  while ${1} 
         ${2:TARGET}
-  }
+  end
 
 snippet each
 abbr    each ... end
   ${1}.each { |${2:i}|
-    ${3:TARGET}
+  ${3:TARGET}
   }
 
 snippet arr

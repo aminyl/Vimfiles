@@ -26,4 +26,3 @@ autocmd ColorScheme * highlight rubyAttribute ctermfg=22 guifg=#ff3c3c          
 let g:molokai_original = 0 " デフォルトは0，他は1"
 " let g:rehash256 = 1 "256色モード(違いがわからない)
 colorscheme molokai
-

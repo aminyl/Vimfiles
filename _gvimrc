@@ -6,9 +6,10 @@
 
 " 色設定
 source ~/vimfiles/setting/color.vim
+
 " ツールバーを削除
 set guioptions-=T
-"メニューを削除
+" メニューを削除
 set guioptions-=m
 
 " =============================================================================
@@ -39,7 +40,7 @@ set cmdheight=2
 set shortmess+=I
 
 " =============================================================================
-" タブ表示に関する設定 : http://doruby.kbmj.com/aisi/20091218/Vim__ 
+" タブ表示に関する設定 http://doruby.kbmj.com/aisi/20091218/Vim__ 
 " =============================================================================
 function! GuiTabLabel()
   " タブで表示する文字列の初期化をします
@@ -78,8 +79,8 @@ endfunction
 set guitablabel=\ %{GuiTabLabel()}
 
 " =============================================================================
-" 1つのファイルをドロップしたときに新しいタブで開く :http://vimwiki.net/?tips%2F100 
+" 1つのファイルをドロップしたときに新しいタブで開く http://vimwiki.net/?tips%2F100 
 " =============================================================================
-"autocmd VimEnter * tab all
-"autocmd BufAdd * exe 'tablast | tabe "' . expand( "<afile") .'"'
-
+" OpenFiles.vimでファイルが2重に開かれるので無効
+" autocmd VimEnter * tab all
+" autocmd BufAdd * exe 'tablast | tabe "' . expand( "<afile") .'"'
