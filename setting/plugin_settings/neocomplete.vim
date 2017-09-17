@@ -10,7 +10,7 @@ let g:neocomplete#enable_refresh_always = 1
 
 let g:neocomplcache_dictionary_filetype_lists = {
     \ 'default' : '',
-    \ 'ruby' : $HOME.'/vimfiles/dictionary/ruby.dict'
+    \ 'ruby' : '~/vimfiles/dictionary/ruby.dict'
     \ }
 
 augroup omnicomplete

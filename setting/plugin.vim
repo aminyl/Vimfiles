@@ -1,11 +1,11 @@
 " source ~/vimfiles/setting/plugin_settings/codic.vim
 " source ~/vimfiles/setting/plugin_settings/neocomplete.vim
-source ~/vimfiles/setting/plugin_settings/neosnippet.vim
+" source ~/vimfiles/setting/plugin_settings/neosnippet.vim
 " source ~/vimfiles/setting/plugin_settings/paste_mode.vim
 " source ~/vimfiles/setting/plugin_settings/previm.vim
 " source ~/vimfiles/setting/plugin_settings/quickrun.vim
 " source ~/vimfiles/setting/plugin_settings/ref.vim
-source ~/vimfiles/setting/plugin_settings/showmarks.vim
+" source ~/vimfiles/setting/plugin_settings/showmarks.vim
 " source ~/vimfiles/setting/plugin_settings/syntasitc.vim
 " source ~/vimfiles/setting/plugin_settings/unite.vim
 " source ~/vimfiles/setting/plugin_settings/watchdogs.vim
