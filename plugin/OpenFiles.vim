@@ -14,7 +14,7 @@ function! s:OpenReferences()
   execute ":e $HOME/GoogleDrive/ProgrammingContest/ruby/format.rb"
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/ruby.rb"
   execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/ruby_p.rb"
-  execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/ruby/vimmemo.rb"
+  execute ":tabnew $HOME/GoogleDrive/ProgrammingContest/vim/vimmemo.rb"
 endfunction
 
 function! s:OpenSettings()
