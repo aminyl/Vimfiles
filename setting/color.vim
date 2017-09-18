@@ -24,25 +24,29 @@ autocmd ColorScheme * highlight rubyString ctermfg=22 guifg=#ff984d             
 autocmd ColorScheme * highlight rubyTodo gui=bold ctermfg=22 guifg=#cc0733          " TODO, FIXME, OPTIMIZE
 
 " autocmd ColorScheme * highlight rubyClassDeclaration ctermfg=22 guifg=#2ca7b8     " 
+autocmd ColorScheme * highlight rubyDefine ctermfg=22 guifg=#47cdfd                 " class, def, end
 autocmd ColorScheme * highlight rubyConstant gui=bold ctermfg=22 guifg=#66d9ef      " クラス名 
 autocmd ColorScheme * highlight rubyFunction ctermfg=22 guifg=#a6e22e               " 関数名
-" autocmd ColorScheme * highlight rubyClassVariable ctermfg=22 guifg=#c300ff        " クラス変数
-autocmd ColorScheme * highlight rubyInstanceVariable ctermfg=22 guifg=#99e500"ffc489       " @変数
-" autocmd ColorScheme * highlight rubyGlobalVariable ctermfg=22 guifg=#c300ff       " グローバル変数
+autocmd ColorScheme * highlight rubyGlobalVariable gui=bold ctermfg=22 guifg=#ffebc8" グローバル変数
+autocmd ColorScheme * highlight rubyClassVariable ctermfg=22 guifg=#e8e2fe          " クラス変数
+autocmd ColorScheme * highlight rubyInstanceVariable ctermfg=22 guifg=#d3e37a"ffc489" @変数
+" autocmd ColorScheme * highlight rubyLocalVariableOrMethod ctermfg=22 guifg=#c300ff"
+" autocmd ColorScheme * highlight rubyPseudoVariable ctermfg=22 guifg=#c300ff       "
+
+autocmd ColorScheme * highlight rubyInterpolationDelimiter ctermfg=22 guifg=#8f8f8f " #{}
+autocmd ColorScheme * highlight rubyInterpolation ctermfg=22 guifg=#ffec00          " #{}の中身
 
 autocmd ColorScheme * highlight rubyRepeat ctermfg=22 guifg=#ff3d7a                 " while, for end
-autocmd ColorScheme * highlight rubyRepeatModifier gui=bold ctermfg=22 guifg=#ff3d7a         " 
+autocmd ColorScheme * highlight rubyRepeatModifier gui=bold ctermfg=22 guifg=#ff3d7a" 
 autocmd ColorScheme * highlight rubyConditional ctermfg=22 guifg=#ff3d7a            " if else end 
-autocmd ColorScheme * highlight rubyConditionalModifier gui=bold ctermfg=22 guifg=#ff3d7a    " break if の if
+autocmd ColorScheme * highlight rubyConditionalModifier gui=bold ctermfg=22 guifg=#ff3d7a   " break if の if
 autocmd ColorScheme * highlight rubyControl ctermfg=22 guifg=#ff3d7a                "do end
+autocmd ColorScheme * highlight rubyControl ctermfg=22 guifg=#ff5bdd                " break, next, return, and, or 等
 autocmd ColorScheme * highlight rubyAttribute ctermfg=22 guifg=#ff3c3c              " attr_accessor
-
 " autocmd ColorScheme * highlight rubyStringEscape ctermfg=22 guifg=#c300ff         " エスケープシーケンス
 " autocmd ColorScheme * highlight rubyQuoteEscape ctermfg=22 guifg=#c300ff          " よくわからない
-" autocmd ColorScheme * highlight rubyInterpolation ctermfg=22 guifg=#c300ff        " #{}の中身
 " autocmd ColorScheme * highlight rubyInterpolationDelimiter ctermfg=22 guifg=#c300ff " attr_accessor
-" autocmd ColorScheme * highlight rubySymbol ctermfg=22 guifg=#c300ff               " :to_i等のシンボル
-" autocmd ColorScheme * highlight rubyControl ctermfg=22 guifg=#c300ff              " break, next, return, and, or 等
+autocmd ColorScheme * highlight rubySymbol gui=bold ctermfg=22 guifg=#d82929        " :to_i等のシンボル
 " autocmd ColorScheme * highlight rubyBoolean ctermfg=22 guifg=#c300ff              " true, false
 
 " autocmd ColorScheme * highlight rubyOperator ctermfg=22 guifg=#c300ff             "
@@ -57,7 +61,6 @@ autocmd ColorScheme * highlight rubyAttribute ctermfg=22 guifg=#ff3c3c          
 " autocmd ColorScheme * highlight rubyMethodDeclaration ctermfg=22 guifg=#c300ff    " 
 " autocmd ColorScheme * highlight rubyClassDeclaration ctermfg=22 guifg=#c300ff     " 
 " autocmd ColorScheme * highlight rubyBeginEnd ctermfg=22 guifg=#c300ff             " 
-" autocmd ColorScheme * highlight rubyDefine ctermfg=22 guifg=#c300ff               " 
 " autocmd ColorScheme * highlight rubyClass ctermfg=22 guifg=#c300ff                "
 " autocmd ColorScheme * highlight rubyMethodBlock ctermfg=22 guifg=#c300ff          "
 " autocmd ColorScheme * highlight rubyBlock ctermfg=22 guifg=#c300ff                "
