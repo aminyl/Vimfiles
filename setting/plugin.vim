@@ -1,6 +1,6 @@
 " source ~/vimfiles/setting/plugin_settings/codic.vim
 " source ~/vimfiles/setting/plugin_settings/neocomplete.vim
-" source ~/vimfiles/setting/plugin_settings/neosnippet.vim
+source ~/vimfiles/setting/plugin_settings/neosnippet.vim
 " source ~/vimfiles/setting/plugin_settings/paste_mode.vim
 " source ~/vimfiles/setting/plugin_settings/previm.vim
 " source ~/vimfiles/setting/plugin_settings/quickrun.vim

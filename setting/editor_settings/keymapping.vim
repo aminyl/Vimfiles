@@ -36,6 +36,6 @@ imap <C-Left> <ESC>gebi
 nmap <C-Left> b
 " 変更履歴区切り
 " http://haya14busa.com/vim-break-undo-sequence-in-insertmode/
-inoremap <Space> <C-g>u<Space>
-inoremap <Tab> <C-g>u<Tab>
-inoremap <CR> <C-g>u<CR>
+inoremap <Space> <Space><C-g>u
+inoremap <Tab> <Tab><C-g>u
+inoremap <CR> <CR><C-g>u
