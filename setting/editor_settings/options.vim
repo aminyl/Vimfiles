@@ -39,6 +39,7 @@ set undodir=$HOME/.vimbackup	  " undoディレクトリの指定
 set browsedir=buffer		" バッファで開いているファイルのディレクトリでエクスクローラを開始する
 set cursorline          " 今いる行に線を引く
 hi clear CursorLine
+set hlsearch			  		" 検索文字列をハイライト(する:hlsearch，しない:nohlsearc)
 set shortmess=a
 set dictionary=$HOMEPATH/vimfiles/dictionary/ruby.dict
 set whichwrap=b,s,h,l,<,>,[,]	" カーソルを行頭，行末で止まらないようにする(mswin.vimを有効にしていてもhlの移動では必要)

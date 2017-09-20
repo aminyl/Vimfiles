@@ -9,7 +9,6 @@ inoremap {<CR> {<CR>}<ESC><UP>o
 nnoremap <F5> :w<ENTER>:!ruby %<ENTER>
 inoremap <F5> <ESC>:w<ENTER>:!ruby %<ENTER><ESC>a
 inoremap jj <ESC>				" エスケープ
-set hlsearch			  		" 検索文字列をハイライト(する:hlsearch，しない:nohlsearc)
 nnoremap <ESC><ESC> :nohlsearch<CR> " <ESC>連打でハイライトを消す
 " いっぱい移動する
 nnoremap J 5j
@@ -35,3 +34,8 @@ imap <C-Right> <ESC>ewi
 nmap <C-Right> w
 imap <C-Left> <ESC>gebi
 nmap <C-Left> b
+" 変更履歴区切り
+" http://haya14busa.com/vim-break-undo-sequence-in-insertmode/
+inoremap <Space> <C-g>u<Space>
+inoremap <Tab> <C-g>u<Tab>
+inoremap <CR> <C-g>u<CR>
