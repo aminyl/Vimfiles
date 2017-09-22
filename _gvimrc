@@ -1,6 +1,6 @@
 ﻿scriptencoding utf-8
 
-" ~_gvimrcに
+" ~/_gvimrcに
 "   source ~/vimfiles/_gvimrc
 " と記述してこのファイルを読み込む
 

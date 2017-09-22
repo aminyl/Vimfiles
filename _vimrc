@@ -1,4 +1,4 @@
-" ~_vimrcに
+" ~/_vimrcに
 "   source ~/vimfiles/_vimrc
 " と記述してこのファイルを読み込む
 
