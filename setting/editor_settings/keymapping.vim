@@ -39,3 +39,6 @@ nmap <C-Left> b
 inoremap <Space> <Space><C-g>u
 inoremap <Tab> <Tab><C-g>u
 inoremap <CR> <CR><C-g>u
+" 改行
+imap <S-CR> <ESC>o
+" imap <M-CR> <ESC>O " 効かない

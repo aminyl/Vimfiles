@@ -18,7 +18,7 @@ abbr    downto ... end
 
 snippet while
 abbr    while ... end
-    while ${1} 
+    while ${1:true}
         ${2:TARGET}
     end
 
@@ -66,21 +66,29 @@ snippet geti
 abbr    gets.to_i
     = gets.to_i
     ${1}
-snippet gets
-abbr    gets.split.map(&:to_i)
-    = gets.split.map(&:to_i)
-    ${1}
-snippet getc
-abbr    gets.chomp
-    = gets.chomp
-    ${1}
 snippet =geti
 abbr    gets.to_i
     = gets.to_i
     ${1}
+snippet gets
+abbr    gets.split.map(&:to_i)
+    = gets.split.map(&:to_i)
+    ${1}
 snippet =gets
 abbr    gets.split.map(&:to_i)
     = gets.split.map(&:to_i)
+    ${1}
+snippet getsp
+abbr    gets.split.map{ |x| x.to_i.pred }
+    = gets.split.map{ |x| x.to_i.pred }
+    ${1}
+snippet =getsp
+abbr    gets.split.map{ |x| x.to_i.pred }
+    = gets.split.map{ |x| x.to_i.pred }
+    ${1}
+snippet getc
+abbr    gets.chomp
+    = gets.chomp
     ${1}
 snippet =getc
 abbr    gets.chomp
