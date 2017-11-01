@@ -2,7 +2,7 @@
 imap { {}<LEFT>
 " imap [ []<LEFT>
 " imap ( ()<LEFT>
-inoremap {<CR> {<CR>}<ESC><UP>o
+" inoremap {<CR> {<CR>}<ESC><UP>o
 " inoremap [<CR> [<CR>]<ESC><UP>o
 " inoremap (<CR> (<CR>)<ESC><UP>o
 " 保存して実行
