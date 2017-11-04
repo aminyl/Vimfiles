@@ -1,5 +1,5 @@
 " 対応する括弧を自動入力
-imap { {}<LEFT>
+" imap { {}<LEFT>
 " imap [ []<LEFT>
 " imap ( ()<LEFT>
 " inoremap {<CR> {<CR>}<ESC><UP>o
@@ -8,7 +8,7 @@ imap { {}<LEFT>
 " 保存して実行
 nnoremap <F5> :w<ENTER>:!ruby %<ENTER>
 inoremap <F5> <ESC>:w<ENTER>:!ruby %<ENTER><ESC>a
-inoremap jj <ESC>				" エスケープ
+inoremap jj <ESC>	" エスケープ
 nnoremap <ESC><ESC> :nohlsearch<CR> " <ESC>連打でハイライトを消す
 " いっぱい移動する
 nnoremap J 5j
